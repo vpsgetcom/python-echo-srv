@@ -13,9 +13,14 @@ https://tmpecho-serv.vpsget.com/
 
 https://tmpecho-serv.vpsget.com/index.html 
 Please note that proper testing  with get echo reply could be done only with echo client , you may use src/echoClient.py
+
 use the next config in src/echiClient.py for proper echo reply test
+
+
 HOST = 'tmpecho-serv.vpsget.com'
+
 PORT = 30516
+
 
 ___
 Test and Build locally:
