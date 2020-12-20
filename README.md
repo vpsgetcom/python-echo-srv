@@ -91,7 +91,11 @@ Check:
 ``` 
 Please  note that you will need to change host\ port in echoClient.py before run test script:
 ```
- python src/echoClient.py  #change port defined here before run 
+ edit src/echoClient.py  #change port and ip defined here before run, for example 
+  HOST = '13*.2**.**.**' # or HOST = 'localhost' if locally
+  PORT= 30516 or #PORT = 4444
+ 
+ python src/echoClient.py 
 ```
 
 
