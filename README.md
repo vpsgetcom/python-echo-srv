@@ -16,8 +16,8 @@ Check image ID:
 Use image ID and run interactively : 
 
 `
-    docker run -it -p 4444:4444 <IMAGE_ID>
-    
+    docker run -it -p 4444:4444 <IMAGE_ID>`
+`
     #docker run -it -p 4444:4444 echo-server`
 
 Check that CT is running:
