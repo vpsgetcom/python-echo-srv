@@ -5,8 +5,9 @@ src/echoServer.py  - echo server listening on port 4444
 src/echoClient.py - script to test echo server. Sending some string and get reply back; sending request /index.html in order to get content of index.html
 
 
-index.html - fethed from python org
-published in my dev k8s
+index.html - fetched from python org
+
+For any case temporary published in my dev k8s:
 
 https://tmpecho-serv.vpsget.com/
 
