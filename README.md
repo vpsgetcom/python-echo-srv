@@ -1,3 +1,9 @@
+test task by Andrii.Kyianov@gmail.com
+
+src/echoServer.py  - souce of the echo server listening on port 4444
+src/echoClient.py - script to test echo server. Send some string and get reply back; send request /index.html in order to get content of index.html
+
+___
 DOCKER
 
 We are working in a local environment so expecting that you have docker installed on your system.
