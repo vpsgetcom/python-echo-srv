@@ -46,7 +46,24 @@ Run echoClient.py for test
 ```
 
 
------------
+Remember to stop/delete docker container in order to exclude any issues with the next tests.
+___
+
+Terraform
+
+Go to the clonned git repo
+```
+ cd python-echo-srv
+```
+Init and apply terraform
+
+```
+ terraform init
+ terraform apply
+```
+
+Remember to delete docker after tests.
+___
 k8s
 
 
