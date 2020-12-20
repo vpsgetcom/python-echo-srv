@@ -63,6 +63,9 @@ Init and apply terraform
 ```
 
 Remember to stop/delete docker CT after tests.
+```
+  terraform destroy
+```
 ___
 k8s
 
