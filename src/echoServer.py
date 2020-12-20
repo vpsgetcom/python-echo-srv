@@ -25,8 +25,9 @@ def echo_server(port):
         client, address = sock.accept()
         data = client.recv(data_payload)
 
-        #handle if we received '/index.html "string" //definitely bytes array'
-        if data == b'/index.html':
+        #NOTED IT READING TASK ONCE AGAIN...
+        if 'index.html' in data.decode():
+        #if data == b'/index.html':
             print("Data is INDEX.HTML: %s" % data)
             print("sending back index.html content")
 
