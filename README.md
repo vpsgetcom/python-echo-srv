@@ -79,8 +79,8 @@ Please  note that you will need to change host\ port in echoClient.py
 Check:
 ```
  kubectl get pods
- kubectl get svc  #note the port here as we did not  force any port so it will be assigned automatically.
- python src/echoClient.py #change port here 
+ kubectl get svc           #note the port here
+ python src/echoClient.py  #change port defined here before run 
  
 ```
 
@@ -91,6 +91,7 @@ I've pushed the docker img to docker hub. However you may use your locally build
  kubectl config get-contexts
  kubectl config use-context docker-desktop
 ```
+..and modigy the image line in deployments.
 
 
 
