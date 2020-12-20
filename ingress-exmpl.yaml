@@ -1,0 +1,30 @@
+#FILE WILL BE REMOVED SOON FROM PUB!!!
+#noted that maybe under "Once deployed, the application should be accessible from the public."  you  require not only publicly accessible service, but also reaaly published app.. 
+# accessible via https://tmpecho-serv.vpsget.com/
+
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: tmpecho-https
+  #namespace: default
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    kubernetes.io/ingress.class: nginx  
+spec:
+  tls:
+    - hosts:
+        - tmpecho-serv.vpsget.com
+      secretName: tmpecho-vpsget.local-tls
+  rules:
+    - host: tmpecho-serv.vpsget.com
+      http:
+        paths:
+          - backend:
+              serviceName: python-echo-server-service
+              servicePort: 4444
+status:
+  loadBalancer:
+    ingress:
+      - ip: 138.201.58.182
+
+
