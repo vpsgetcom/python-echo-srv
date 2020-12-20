@@ -4,6 +4,12 @@ src/echoServer.py  - echo server listening on port 4444
 
 src/echoClient.py - script to test echo server. Sending some string and get reply back; sending request /index.html in order to get content of index.html
 
+
+index.html - fethed from python org
+
+<b>published</b> in my dev k8s
+https://tmpecho-serv.vpsget.com/
+https://tmpecho-serv.vpsget.com/index.html
 ___
 
 Clone repo and cd into clonned folder: 
@@ -107,6 +113,10 @@ I've pushed the docker img to docker hub. However you may use your locally build
 ```
 ..and change the container image  in deployments to the local , most likely if will be "echo-server:latest"  .
 
+
+___
+
+For any case  added ingress example and working ingress link : https://tmpecho-serv.vpsget.com/
 
 
 
