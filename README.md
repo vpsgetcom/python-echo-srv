@@ -1,4 +1,4 @@
-test task by Andrii.Kyianov@gmail.com
+Python echo server test task 
 
 src/echoServer.py  - souce of the echo server listening on port 4444
 
