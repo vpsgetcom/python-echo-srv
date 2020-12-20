@@ -51,6 +51,11 @@ ___
 
 Terraform
 
+Created and tested for local windows docker. For linux you need to specify less params in provider:
+```
+provider "docker" {}
+```
+
 Go to the clonned git repo
 ```
  cd python-echo-srv
