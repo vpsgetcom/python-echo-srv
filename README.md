@@ -18,7 +18,7 @@ DOCKER
 Build docker image:
 
 ```
- docker build -f Dockerfile -t echo-erver:latest .
+ docker build -f Dockerfile -t echo-server:latest .
 ```
 
 Check image ID:
