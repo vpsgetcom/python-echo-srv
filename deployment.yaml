@@ -29,7 +29,7 @@ spec:
 
       containers:
       - name: python-echo-server
-        image: ndidocker/echo-erver:latest
+        image: ndidocker/echo-server:latest
         volumeMounts:
         - name: htm-files
           mountPath: htm
