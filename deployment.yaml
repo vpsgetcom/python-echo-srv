@@ -19,16 +19,27 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: python-echo-server
+      app: python-echo-server  
   replicas: 1
   template:
     metadata:
       labels:
         app: python-echo-server
     spec:
+
       containers:
       - name: python-echo-server
         image: ndidocker/echo-erver:latest
+        volumeMounts:
+        - name: htm-files
+          mountPath: htm
         imagePullPolicy: Always
         ports:
         - containerPort: 4444
+     
+      volumes:
+        - name: htm-files
+          configMap:
+            name: config-map-vol
+
+#index.html mapped into separate dir just for example as it was specified in a task; we already included it with a docker img
