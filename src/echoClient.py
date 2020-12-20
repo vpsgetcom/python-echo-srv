@@ -14,6 +14,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     data = s.recv(data_payload)
     print('Received', repr(data))
     s.shutdown(socket.SHUT_WR)
+    
+input("Press Enter to continue...")
 
 #TEST2 : send specific and expect to receive file content  as reply
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -24,8 +26,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print("Receiving...")
     l = s.recv(data_payload)
     while (l):
-        #print("Receiving...")
-        #f.write(l)
         print(l)
         l = s.recv(data_payload)
     s.shutdown(socket.SHUT_WR)
