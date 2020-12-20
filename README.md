@@ -1,8 +1,8 @@
 Python echo server test task 
 
-src/echoServer.py  - souce of the echo server listening on port 4444
+src/echoServer.py  - echo server listening on port 4444
 
-src/echoClient.py - script to test echo server. Send some string and get reply back; send request /index.html in order to get content of index.html
+src/echoClient.py - script to test echo server. Sending some string and get reply back; sending request /index.html in order to get content of index.html
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 Terraform
 
-Created and tested for local windows docker. For linux you need to specify less params in provider:
+Tested locally. For linux you need to set docker provider w/o  specifying any parameters under provider, chane in main.tf line to the next:
 ```
 provider "docker" {}
 ```
@@ -60,7 +60,7 @@ Go to the clonned git repo
 ```
  cd python-echo-srv
 ```
-Init and apply terraform
+Init and apply 
 
 ```
  terraform init
@@ -75,7 +75,6 @@ ___
 k8s
 
 
-Please  note that you will need to change host\ port in echoClient.py
 
 ```
  kubectl apply -f config-map-vol.yaml
@@ -85,11 +84,14 @@ Please  note that you will need to change host\ port in echoClient.py
 ```
 
 Check:
+
 ```
  kubectl get pods
  kubectl get svc           #note the port here
+``` 
+Please  note that you will need to change host\ port in echoClient.py before run test script:
+```
  python src/echoClient.py  #change port defined here before run 
- 
 ```
 
 
@@ -99,7 +101,7 @@ I've pushed the docker img to docker hub. However you may use your locally build
  kubectl config get-contexts
  kubectl config use-context docker-desktop
 ```
-..and modigy the image line in deployments.
+..and change the container image  in deployments to the local , most likely if will be "echo-server:latest"  .
 
 
 
