@@ -6,14 +6,20 @@ src/echoClient.py - script to test echo server. Sending some string and get repl
 
 
 index.html - fethed from python org
-
-<b>published</b> in my dev k8s
+published in my dev k8s
 
 https://tmpecho-serv.vpsget.com/
 
 https://tmpecho-serv.vpsget.com/index.html 
 Please note that proper testing  with get echo reply could be done only with echo client , you may use src/echoClient.py
+use the next config in src/echiClient.py for proper echo reply test
+HOST = 'tmpecho-serv.vpsget.com'
+PORT = 30516
+
 ___
+Test and Build locally:
+___
+
 
 Clone repo and cd into clonned folder: 
 ```
