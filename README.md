@@ -5,6 +5,14 @@ src/echoServer.py  - souce of the echo server listening on port 4444
 src/echoClient.py - script to test echo server. Send some string and get reply back; send request /index.html in order to get content of index.html
 
 ___
+
+Clone repo and cd into clonned folder: 
+```
+git clone https://github.com/vpsgetcom/python-echo-srv.git
+cd python-echo-srv
+```
+
+___
 DOCKER
 
 Build docker image:
