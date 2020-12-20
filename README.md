@@ -49,21 +49,31 @@ Run echoClient.py for test
 -----------
 k8s
 
-I've pushed the docker img to docker hub. However you may use your locally builded image to test with kubectl if you will change the context for kubectl  , like: 
 
-```
- kubectl config use-context docker-for-desktop
-```
-
-With any other k8s note that you will need to change host in echoClient.py
+Please  note that you will need to change host\ port in echoClient.py
 
 ```
  kubectl apply -f config-map-vol.yaml
- kubectl apply -f deployment.yaml #- tested with my dev self-hosted k8s; NodePort
-  #kubectl apply -f deployment-dfd.yaml #- tested with docker-for-desktop context
+ kubectl apply -f deployment.yaml 
+ #-tested with my dev self-hosted k8s and with docker-desktop; 
+ 
+```
+
+Check:
+```
+ kubectl get pods
+ kubectl get svc  #note the port here as we did not  force any port so it will be assigned automatically.
+ python src/echoClient.py #change port here 
+ 
 ```
 
 
+I've pushed the docker img to docker hub. However you may use your locally builded image to test with kubectl if you will change the context for kubectl  , like: 
+
+```
+ kubectl config get-contexts
+ kubectl config use-context docker-desktop
+```
 
 
 
