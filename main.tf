@@ -10,12 +10,12 @@ provider "docker" {
   host    = "npipe:////.//pipe//docker_engine"
 }
 
-resource "docker_image" "python-echo-server" {
+resource "docker_image" "echo-server" {
   name         = "ndidocker/echo-server:latest"
   keep_locally = false
 }
 
-resource "docker_container" "python-echo-server" {
+resource "docker_container" "echo-server" {
   image = docker_image.echo-server.latest
   name  = "tutorial"
   ports {
