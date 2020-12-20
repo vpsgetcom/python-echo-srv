@@ -11,7 +11,8 @@ index.html - fethed from python org
 
 https://tmpecho-serv.vpsget.com/
 
-https://tmpecho-serv.vpsget.com/index.html
+https://tmpecho-serv.vpsget.com/index.html 
+Please note that proper testing  with get echo reply could be done only with echo client , you may use src/echoClient.py
 ___
 
 Clone repo and cd into clonned folder: 
