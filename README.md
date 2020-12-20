@@ -62,7 +62,7 @@ Init and apply terraform
  terraform apply
 ```
 
-Remember to delete docker after tests.
+Remember to stop/delete docker CT after tests.
 ___
 k8s
 
