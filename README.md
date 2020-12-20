@@ -7,9 +7,6 @@ src/echoClient.py - script to test echo server. Send some string and get reply b
 ___
 DOCKER
 
-We are working in a local environment so expecting that you have docker installed on your system.
-
-
 Build docker image:
 
 ```
