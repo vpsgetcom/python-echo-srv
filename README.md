@@ -46,8 +46,9 @@ I've pushed the docker img to docker hub. However you may use your locally build
 With any other k8s note that you will need to change host in echoClient.py
 
 ```
+ kubectl apply -f config-map-vol.yaml
  kubectl apply -f deployment.yaml #- tested with my dev self-hosted k8s; NodePort
- kubectl apply -f deployment-dfd.yaml #- tested with docker-for-desktop context
+  #kubectl apply -f deployment-dfd.yaml #- tested with docker-for-desktop context
 ```
 
 
