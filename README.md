@@ -8,7 +8,9 @@ src/echoClient.py - script to test echo server. Sending some string and get repl
 index.html - fethed from python org
 
 <b>published</b> in my dev k8s
+
 https://tmpecho-serv.vpsget.com/
+
 https://tmpecho-serv.vpsget.com/index.html
 ___
 
